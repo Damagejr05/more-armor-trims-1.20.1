@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "morearmortrims",
+	"version": "${version}",
+	"name": "More Armor Trims",
+	"description": "Adds more armor trims, some with unique abilities.",
+	"authors": [
+		"Damagejr05"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/morearmortrims/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.damage.moretrims.MoreArmorTrims"
+		],
+		"client": [
+			"net.damage.moretrims.MoreArmorTrimsClient"
+		],
+		"fabric-datagen": [
+			"net.damage.moretrims.MoreArmorTrimsDataGenerator"
+		]
+	},
+	"mixins": [
+		"morearmortrims.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
